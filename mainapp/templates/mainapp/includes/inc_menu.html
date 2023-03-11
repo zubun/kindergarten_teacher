@@ -1,0 +1,26 @@
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Главная
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'main' %}">Домашняя страница 1</a>
+                    <a class="dropdown-item" href="{% url 'homepage_2' %}">Домашняя страница 2</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase text-dark" href="{% url 'about' %}">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase text-dark" href="{% url 'category' %}">Категории</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase text-dark" href="{% url 'contact' %}">Контакты</a>
+                </li>
+              </ul>
+              <form class="form-inline position-relative ml-lg-4">
+                <input class="form-control px-0 w-100" type="search" placeholder="Поиск">
+                <!-- <button class="search-icon" type="submit"><i class="ti-search text-dark"></i></button> -->
+                <a href="{% url 'search' %}" class="search-icon"><i class="ti-search text-dark"></i></a>
+              </form>
